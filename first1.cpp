@@ -7,11 +7,11 @@ class myclass{
 	int get_age();
 };
 
-void myclass::set_age(int x){
+inline void myclass::set_age(int x){
 	age=x;
 }
 
-int myclass::get_age(){
+inline int myclass::get_age(){
 	return age;
 }
 
