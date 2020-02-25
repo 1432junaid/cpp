@@ -27,23 +27,23 @@ int main(){
 
 	bitset<32>n(55);
 
-	cout<<b.count()<<endl;
+	cout<<b.count()<<endl;					//count no of  1's
 
-	cout<<b2.set()<<endl;
+	cout<<b2.set()<<endl;					//put 1's at all places
 
-	cout<<b2.reset()<<endl;
+	cout<<b2.reset()<<endl;					//put 0 at all places
 
-	cout<<b2.set(3)<<endl;
+	cout<<b2.set(3)<<endl;					//put 1 at a particular position
 
-	cout<<b2.reset(3)<<endl;
+	cout<<b2.reset(3)<<endl;				//put 0 at a particular positon
 
-	cout<<b3.flip()<<endl;
+	cout<<b3.flip()<<endl;					//flip whole bits
 
-	cout<<b3.flip(5)<<endl<<endl;
+	cout<<b3.flip(5)<<endl<<endl;				//flip at aposition
 
-	cout<<"any b="<<b.any()<<endl;
-	cout<<"none b="<<b.none()<<endl;
-	cout<<"test at pos b5="<<b5.test(4)<<endl;
+	cout<<"any b="<<b.any()<<endl;				//retur 1 when any 1's is exixts
+	cout<<"none b="<<b.none()<<endl;			//return 1 when no 1's
+	cout<<"test at pos b5="<<b5.test(4)<<endl;		//test 1 at the position
 	cout<<"to_u_long b5="<<b5.to_ulong()<<endl;
 
 
@@ -53,3 +53,4 @@ int main(){
 //	}
 	return 0;
 }
+
