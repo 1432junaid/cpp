@@ -4,7 +4,7 @@
 using namespace std;
 int main(){
 	vector<int>v(5,10);
-	vector<int>v2(5,1);
+//	vector<int>v2(5,1);
 /*	v.push_back(22);
 //	cout<<v.size();
 	size_t size = v1.size();
@@ -23,7 +23,7 @@ int main(){
 		*i+3 = 45;
 	}
 
-*/
+
 	vector<int>::iterator itr ;
 	vector<int>::iterator itr2 = v2.begin();
 	itr2 += 2;
@@ -33,7 +33,24 @@ int main(){
 		cout<<*itr2<<endl;
 	itr2 ++;
 	}
-
+*/
+	vector<int>::iterator itr2 = v.begin();
+//	vector<int>::iterator itr3 = v.begin();
+//	for(vector<int>::iterator i =v.begin(); i<v.end();i++){
+//		v[]
+//	itr3 += 3;
+//	itr2 += 2;
+//	v.push_back(10);
+//*/
+//	v.erase(itr2);			//for particular iterator
+//	v.erase(itr2,v.end());		//for range
+//	v.pop_back();
+//	v.clear();
+	while(itr2 != v.end()){
+		cout<<*itr2<<endl;
+		itr2 ++;
+	}
+//	v.pop_back();
 
 	return 0;
 }
